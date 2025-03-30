@@ -1,0 +1,40 @@
+  p {
+    margin: 0;
+    color: var(--gray-700);
+  }
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-family: 'Atkinson Hyperlegible Mono', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-family: 'Atkinson Hyperlegible Mono', serif;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+  }
+  

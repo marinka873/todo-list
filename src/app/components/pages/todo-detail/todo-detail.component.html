@@ -1,0 +1,17 @@
+<div *ngIf="todo as task; else loadingOrError">
+    <h2>Детали задачи</h2>
+    <p><strong>ID:</strong> {{ task.id }}</p>
+    <p><strong>Заголовок:</strong> {{ task.title }}</p>
+    <p><strong>Статус:</strong> {{ task.completed | status }}</p>
+    <p><strong>User ID:</strong> {{ task.userId }}</p>
+  </div>
+  
+  <ng-template #loadingOrError>
+    <div *ngIf="error; else loading">
+      <p>{{ error }}</p>
+    </div>
+    <ng-template #loading>
+      <p>Загрузка задачи...</p>
+    </ng-template>
+  </ng-template>
+  

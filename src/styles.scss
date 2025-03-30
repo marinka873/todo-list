@@ -1,0 +1,15 @@
+@use './assets/fonts/_fonts';
+
+/* reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible Mono', serif;
+}
+   
+html, body { height: 100%; }
+body { 
+    margin: 0;
+    font-family: 'Atkinson Hyperlegible Mono', serif;
+ }

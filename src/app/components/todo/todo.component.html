@@ -1,0 +1,19 @@
+<p>todo works!</p>
+
+<div *ngIf="loading">Загрузка...</div>
+<div *ngIf="error">{{ error }}</div>
+
+<ul *ngIf="!loading && !error">
+  <li *ngFor="let todo of todos">
+    <input 
+      type="checkbox" 
+      [checked]="todo.completed" 
+      (change)="toggleTodo(todo)"
+    />
+    <a [routerLink]="['/todos', todo.id]">
+      {{ todo.title }} - {{ todo.completed | status }}
+    </a>
+  </li>
+</ul>
+
+<app-task-form (addTask)="addTask($event)"></app-task-form>
